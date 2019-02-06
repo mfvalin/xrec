@@ -44,18 +44,18 @@ default: reclib
 
 .c.a:
 	s.cc -c $(OPTIMIZ) $(CFLAGS) $<
-	ar rv $@ $*.o
+	ar $(AROPT) $@ $*.o
 	rm -f $*.o
 
 .ftn.a:
 	s.compile $(OPTIMIZ) -opt "=$(FFLAGS)" -src $<
-	ar rv $@ $*.o
+	ar $(AROPT) $@ $*.o
 #	rm -f $*.f $*.o
 	rm -f $*.o
 
 .ftn90.a:
 	s.compile $(OPTIMIZ) -opt "=$(FFLAGS)" -src $<
-	ar rv $@ $*.o
+	ar $(AROPT) $@ $*.o
 	rm -f $*.f $*.o
 
 FTNDECKS= \
