@@ -1,0 +1,12 @@
+bin
+lib
+*.o
+*.a
+*.mod
+*.Abs
+autog/*.f
+main/*.f
+xdash/*.f
+wgl/*.f
+x_wgl/*.f
+xplot88/*.f
